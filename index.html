@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Narzędzie, dzięki któremu wygodnie wygenerujesz gotowe reguły CSS, dostowując box-shadow i kopiując gotowy kod.">
+
+    <title>CSS BOX-SHADOW CREATOR</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h2 class="branding">CSS BOX-SHADOW CREATOR</h2>
+        <div class="container-fluid">
+            <div class="row m-auto pt-4">
+                <div class="col-12">
+                    <span>Horizontal:</span>
+                </div>
+            </div>
+            <div class="row m-auto">
+                <div class="col-9">
+                    <input class="horizontal-range" type="range" value="10" min="-100" max="100" aria-label="horizontal range">
+                </div>
+                <div class="col-3">
+                    <input class="horizontal-number" type="number" value="10" min="-100" max="100" aria-label="horizontal number">
+                </div>
+            </div>
+            <div class="row m-auto pt-2">
+                <div class="col-12">
+                    <span>Vertical:</span>
+                </div>
+            </div>
+            <div class="row m-auto">
+                <div class="col-9">
+                    <input class="vertical-range" type="range" value="10" min="-100" max="100" aria-label="vertical range">
+                </div>
+                <div class="col-3">
+                    <input class="vertical-number" type="number" value="10" min="-100" max="100" aria-label="vertical number">
+                </div>
+            </div>
+            <div class="row m-auto pt-2">
+                <div class="col-12">
+                    <span>Blur:</span>
+                </div>
+            </div>
+            <div class="row m-auto">
+                <div class="col-9">
+                    <input class="blur-range" type="range" value="30" min="0" max="100" aria-label="blur range">
+                </div>
+                <div class="col-3">
+                    <input class="blur-number" type="number" value="30" min="0" max="100" aria-label="blur number">
+                </div>
+            </div>
+            <div class="row m-auto pt-2">
+                <div class="col-12">
+                    <span>Spread:</span>
+                </div>
+            </div>
+            <div class="row m-auto">
+                <div class="col-9">
+                    <input class="spread-range" type="range" value="0" min="-100" max="100" aria-label="spread range">
+                </div>
+                <div class="col-3">
+                    <input class="spread-number" type="number" value="0" min="-100" max="100" aria-label="spread number">
+                </div>
+            </div>
+            <div class="row m-auto pt-3">
+                <div class="col-9">
+                    <span>Kolor:</span>
+                </div>
+                <div class="col-3">
+                    <input class="color" type="color" value="#777777" aria-label="color">
+                </div>
+            </div>
+            <div class="row m-auto pt-2">
+                <div class="col-10">
+                    <span>Inset:</span>
+                </div>
+                <div class="col-2">
+                    <input class="inset" type="checkbox" aria-label="inset">
+                </div>
+            </div>
+            <div class="row m-auto pt-3">
+                <div class="col-sm-6">
+                    <button type="button" class="btn base-button copy-css">Kopiuj CSS</button>
+                </div>
+            </div>
+            <div class="author">
+                <span>autor: Rafał Żebrowski</span>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <i class="close-icon bi bi-chevron-double-left"></i>
+        <div class="box-shadow-wrapper">
+            <div class="box-shadow"></div>
+        </div>
+    </main>
+
+    <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/box-shadow.js"></script>
+</body>
+</html>
